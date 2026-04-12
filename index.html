@@ -110,33 +110,38 @@
             <h2 class="text-3xl font-bold text-white mb-4">¿Tienes un proyecto tecnológico en mente?</h2>
             <p class="text-gray-400 mb-10">Déjanos tus datos. Un consultor senior analizará tu caso y se pondrá en contacto contigo para evaluar la viabilidad técnica.</p>
             
-            <form action="https://formspree.io/f/xqewzdly" method="POST" class="space-y-4 text-left max-w-2xl mx-auto">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <input type="text" name="Nombre" required placeholder="Nombre Completo" class="w-full bg-gray-900 text-white border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-innovaia-cyan">
-                    <input type="email" name="Correo" required placeholder="Correo Corporativo" class="w-full bg-gray-900 text-white border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-innovaia-cyan">
-                </div>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <input type="text" name="Empresa" required placeholder="Nombre de la Empresa" class="w-full bg-gray-900 text-white border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-innovaia-cyan">
-                    <input type="tel" name="Telefono" required placeholder="Teléfono / WhatsApp" class="w-full bg-gray-900 text-white border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-innovaia-cyan">
-                </div>
+           <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4 text-left max-w-2xl mx-auto">
+    
+    <input type="hidden" name="access_key" value="eb768eb4-4ccf-474a-b93f-90df47f9bf33">
+    
+    <input type="hidden" name="redirect" value="https://innovaia.com.ve">
 
-                <select name="Servicio_Requerido" required class="w-full bg-gray-900 text-gray-400 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-innovaia-cyan appearance-none">
-                    <option value="" disabled selected>¿En qué podemos ayudarte?</option>
-                    <option value="Desarrollo de App / Web">Desarrollo de App / Web</option>
-                    <option value="Implementación y Consultoría ERP">Implementación y Consultoría ERP</option>
-                    <option value="Integración de Inteligencia Artificial">Integración de Inteligencia Artificial</option>
-                    <option value="Gestión de Proyecto Ágil">Gestión de Proyecto Ágil</option>
-                </select>
+    <input type="hidden" name="subject" value="Nuevo Lead: Consulta desde INNOVAIA.COM.VE">
 
-                <textarea name="Mensaje" required placeholder="Cuéntanos brevemente sobre tu proyecto..." rows="4" class="w-full bg-gray-900 text-white border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-innovaia-cyan"></textarea>
-                
-                <input type="hidden" name="_next" value="https://innovaia.com.ve">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <input type="text" name="Nombre" required placeholder="Nombre Completo" class="w-full bg-gray-900 text-white border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-innovaia-cyan">
+        <input type="email" name="Correo" required placeholder="Correo Corporativo" class="w-full bg-gray-900 text-white border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-innovaia-cyan">
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <input type="text" name="Empresa" required placeholder="Nombre de la Empresa" class="w-full bg-gray-900 text-white border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-innovaia-cyan">
+        <input type="tel" name="Telefono" required placeholder="Teléfono / WhatsApp" class="w-full bg-gray-900 text-white border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-innovaia-cyan">
+    </div>
 
-                <button type="submit" class="w-full bg-innovaia-cyan hover:bg-innovaia-teal text-white font-bold py-4 rounded-lg transition-colors">
-                    Solicitar Evaluación Técnica
-                </button>
-            </form>
+    <select name="Servicio_Requerido" required class="w-full bg-gray-900 text-gray-400 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-innovaia-cyan appearance-none">
+        <option value="" disabled selected>¿En qué podemos ayudarte?</option>
+        <option value="Desarrollo de App / Web">Desarrollo de App / Web</option>
+        <option value="Implementación y Consultoría ERP">Implementación y Consultoría ERP</option>
+        <option value="Integración de Inteligencia Artificial">Integración de Inteligencia Artificial</option>
+        <option value="Gestión de Proyecto Ágil">Gestión de Proyecto Ágil</option>
+    </select>
+
+    <textarea name="Mensaje" required placeholder="Cuéntanos brevemente sobre tu proyecto..." rows="4" class="w-full bg-gray-900 text-white border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-innovaia-cyan"></textarea>
+    
+    <button type="submit" class="w-full bg-innovaia-cyan hover:bg-innovaia-teal text-white font-bold py-4 rounded-lg transition-colors shadow-lg">
+        Solicitar Evaluación Técnica
+    </button>
+</form>
 
             <div class="mt-16 text-sm text-gray-600 flex flex-col md:flex-row justify-between items-center">
                 <p>INNOVAIA &copy; 2026. Todos los derechos reservados.</p>
