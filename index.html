@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INNOVAIA | Consultoría IT Premium y Soluciones Ágiles</title>
-    <meta name="description" content="Aceleramos tu transformación digital con desarrollo a medida, ERP e Inteligencia Artificial.">
+    <title>INNOVAIA | Consultoría IT Premium</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     
@@ -37,9 +36,14 @@
             transform: translate(-50%, -50%);
             object-fit: cover;
         }
+        .bg-form-overlay {
+            background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
     </style>
 </head>
-<body class="bg-innovaia-dark text-gray-300 antialiased relative">
+<body class="bg-innovaia-dark text-gray-300 antialiased relative font-sans">
 
     <nav class="absolute top-0 left-0 w-full px-6 py-4 flex justify-between items-center z-50 bg-transparent">
         <div class="text-2xl font-bold tracking-tighter">
@@ -52,10 +56,9 @@
     </nav>
 
     <section class="relative h-screen flex items-center justify-center text-center overflow-hidden z-10">
-       <video autoplay loop muted playsinline id="hero-video" class="opacity-50">
-          <source src="hero-video.mp4" type="video/mp4">
-           Tu navegador no soporta video HTML5.
-       </video>
+        <video autoplay loop muted playsinline id="hero-video" class="opacity-50">
+            <source src="hero-video.mp4" type="video/mp4">
+        </video>
         <div class="absolute inset-0 bg-black/60 z-10"></div>
 
         <div class="relative z-20 container mx-auto px-6 mt-16">
@@ -69,7 +72,7 @@
             <p class="text-xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
                 Aceleramos tu evolución digital integrando ecosistemas corporativos con metodologías ágiles. Más de 18 años redefiniendo la operatividad B2B.
             </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-6">
+            <div class="flex justify-center">
                 <a href="#contacto" class="px-10 py-4 bg-white text-black font-bold rounded-full hover:bg-gray-200 transition-all transform hover:scale-105 text-center">
                     Solicitar Evaluación Técnica
                 </a>
@@ -80,53 +83,78 @@
     <section id="servicios" class="bg-innovaia-dark py-32 border-t border-gray-900">
         <div class="container mx-auto px-6">
             <h2 class="text-4xl md:text-5xl font-extrabold text-white text-center mb-24 tracking-tight">Servicios Premium</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 text-left">
-                <div class="bg-innovaia-card p-10 rounded-2xl border border-gray-800 hover:border-innovaia-cyan transition-colors">
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+                <div class="bg-innovaia-card p-10 rounded-2xl border border-gray-800 hover:border-innovaia-cyan transition-all group">
+                    <div class="text-innovaia-cyan mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                    </div>
                     <h3 class="text-2xl font-bold text-white mb-4">Desarrollo Web y Apps</h3>
                     <p class="text-gray-400">Ecosistemas digitales de alto rendimiento. Desde MVPs rápidos hasta arquitecturas escalables en React y Next.js.</p>
                 </div>
-                <div class="bg-innovaia-card p-10 rounded-2xl border border-gray-800 hover:border-innovaia-teal transition-colors">
+
+                <div class="bg-innovaia-card p-10 rounded-2xl border border-gray-800 hover:border-innovaia-teal transition-all group">
+                    <div class="text-innovaia-teal mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 002-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                    </div>
                     <h3 class="text-2xl font-bold text-white mb-4">Consultoría ERP</h3>
                     <p class="text-gray-400">Implementación e integración de Odoo, SAP y MS Dynamics AX para optimizar tu columna vertebral operativa.</p>
+                </div>
+
+                <div class="bg-innovaia-card p-10 rounded-2xl border border-gray-800 hover:border-innovaia-cyan transition-all group">
+                    <div class="text-innovaia-cyan mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Inteligencia Artificial</h3>
+                    <p class="text-gray-400">Automatización de procesos y análisis predictivo. Integramos modelos de IA para darte una ventaja competitiva real.</p>
+                </div>
+
+                <div class="bg-innovaia-card p-10 rounded-2xl border border-gray-800 hover:border-innovaia-teal transition-all group">
+                    <div class="text-innovaia-teal mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Gestión Ágil de Proyectos</h3>
+                    <p class="text-gray-400">Metodologías Scrum y Kanban para garantizar entregas en tiempo y forma, minimizando riesgos técnicos.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer id="contacto" class="bg-black py-24 border-t border-gray-900">
+    <footer id="contacto" class="bg-form-overlay py-32 border-t border-gray-900">
         <div class="container mx-auto px-6 max-w-4xl text-center">
             <h2 class="text-4xl font-extrabold text-white mb-6 tracking-tight">¿Hablamos de tu proyecto?</h2>
             
-            <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4 text-left max-w-2xl mx-auto">
+            <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4 text-left max-w-2xl mx-auto bg-black/40 p-8 rounded-3xl backdrop-blur-md border border-white/10">
                 <input type="hidden" name="access_key" value="eb768eb4-4ccf-474a-b93f-90df47f9bf33">
                 <input type="hidden" name="redirect" value="https://innovaia.com.ve">
-                <input type="hidden" name="subject" value="Nuevo Lead: INNOVAIA.COM.VE">
+                <input type="hidden" name="subject" value="Nuevo Lead de INNOVAIA">
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <input type="text" name="Nombre" required placeholder="Nombre Completo" class="w-full bg-gray-900 text-white border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-innovaia-cyan">
-                    <input type="email" name="Correo" required placeholder="Correo Corporativo" class="w-full bg-gray-900 text-white border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-innovaia-cyan">
+                    <input type="text" name="Nombre" required placeholder="Nombre Completo" class="w-full bg-gray-900/80 text-white border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:border-innovaia-cyan">
+                    <input type="email" name="Correo" required placeholder="Correo Corporativo" class="w-full bg-gray-900/80 text-white border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:border-innovaia-cyan">
                 </div>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <input type="text" name="Empresa" required placeholder="Nombre de la Empresa" class="w-full bg-gray-900 text-white border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-innovaia-cyan">
-                    <input type="tel" name="Telefono" required placeholder="WhatsApp (Ej: 04122315631)" class="w-full bg-gray-900 text-white border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-innovaia-cyan">
+                    <input type="text" name="Empresa" required placeholder="Empresa" class="w-full bg-gray-900/80 text-white border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:border-innovaia-cyan">
+                    <input type="tel" name="Telefono" required placeholder="WhatsApp (Ej: +58 412...)" class="w-full bg-gray-900/80 text-white border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:border-innovaia-cyan">
                 </div>
 
-                <select name="Servicio" required class="w-full bg-gray-900 text-gray-400 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-innovaia-cyan appearance-none">
+                <select name="Servicio" required class="w-full bg-gray-900/80 text-gray-400 border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:border-innovaia-cyan appearance-none">
                     <option value="" disabled selected>¿En qué podemos ayudarte?</option>
                     <option value="ERP">Consultoría ERP</option>
                     <option value="Web-App">Desarrollo Web/App</option>
                     <option value="IA">Inteligencia Artificial</option>
+                    <option value="Agile">Gestión de Proyecto</option>
                 </select>
 
-                <textarea name="Mensaje" required placeholder="Cuéntanos sobre tu reto técnico..." rows="4" class="w-full bg-gray-900 text-white border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-innovaia-cyan"></textarea>
+                <textarea name="Mensaje" required placeholder="Breve descripción del reto..." rows="4" class="w-full bg-gray-900/80 text-white border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:border-innovaia-cyan"></textarea>
                 
-                <button type="submit" class="w-full bg-white text-black font-bold py-4 rounded-full transition-all hover:bg-gray-200">
+                <button type="submit" class="w-full bg-white text-black font-bold py-4 rounded-full transition-all hover:bg-gray-200 shadow-xl">
                     Enviar Solicitud
                 </button>
             </form>
 
-            <p class="mt-20 text-sm text-gray-600">INNOVAIA &copy; 2026. Todos los derechos reservados.</p>
+            <p class="mt-20 text-xs text-gray-500 uppercase tracking-widest">INNOVAIA &copy; 2026. Miranda, Venezuela.</p>
         </div>
     </footer>
 
