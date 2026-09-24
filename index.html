@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+<html lang="es" class="dark scroll-smooth">
 <head>
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    j=d.createElement(s),dl=l!='dataLayer'?'&l':'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-T377ZKBN');</script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>INNOVAIA | Consultoría IT Premium & Soluciones con Inteligencia Artificial</title>
     <meta name="description" content="Aceleramos tu transformación digital con metodologías ágiles, ERP y soluciones impulsadas por Inteligencia Artificial. Desarrollo Web, Apps y automatización de procesos.">
     <meta name="keywords" content="Consultoría IT, Desarrollo Web, ERP, Odoo, SAP, Inteligencia Artificial, Agile, Venezuela, Innovaia, Soluciones IA, Automatización">
@@ -28,10 +29,13 @@
     <meta name="twitter:description" content="Conoce nuestras soluciones de Transformación Digital e Inteligencia Artificial para tu negocio.">
     <meta name="twitter:image" content="https://innovaia.com.ve/logo_innovaia.jpg">
 
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
     <script src="https://cdn.tailwindcss.com"></script>
-    
     <script>
         tailwind.config = {
+            darkMode: "class",
             theme: {
                 extend: {
                     colors: {
@@ -40,199 +44,634 @@
                             card: '#1C1C1E',
                             cyan: '#06b6d4',
                             teal: '#14b8a6'
-                        }
+                        },
+                        /* ── Paleta Apple-style mapeada a Innovaia ── */
+                        'absolute-black':       '#000000',
+                        'pure-white':           '#FFFFFF',
+                        'cyan-accent':          '#06B6D4',
+                        'teal-accent':          '#14B8A6',
+                        'background':           '#000000',
+                        'surface':              '#000000',
+                        'surface-dim':          '#131313',
+                        'surface-bright':       '#393939',
+                        'surface-container-lowest': '#0e0e0e',
+                        'surface-container-low':    '#1b1b1b',
+                        'surface-container':        '#1C1C1E',
+                        'surface-container-high':   '#2a2a2a',
+                        'surface-container-highest':'#353535',
+                        'surface-variant':          '#353535',
+                        'surface-tint':             '#4cd7f6',
+                        'on-surface':               '#e2e2e2',
+                        'on-surface-variant':       '#bcc9cd',
+                        'on-background':            '#e2e2e2',
+                        'outline':                  '#869397',
+                        'outline-variant':          '#3d494c',
+                        'inverse-surface':          '#e2e2e2',
+                        'inverse-on-surface':       '#303030',
+                        'primary':                  '#4cd7f6',
+                        'primary-container':        '#06b6d4',
+                        'on-primary':               '#003640',
+                        'on-primary-container':     '#00424f',
+                        'on-primary-fixed':         '#001f26',
+                        'on-primary-fixed-variant': '#004e5c',
+                        'inverse-primary':          '#00687a',
+                        'primary-fixed':            '#acedff',
+                        'primary-fixed-dim':        '#4cd7f6',
+                        'secondary':                '#4fdbc8',
+                        'secondary-container':      '#04b4a2',
+                        'on-secondary':             '#003731',
+                        'on-secondary-container':   '#003f38',
+                        'on-secondary-fixed':       '#00201c',
+                        'on-secondary-fixed-variant':'#005048',
+                        'secondary-fixed':          '#71f8e4',
+                        'secondary-fixed-dim':      '#4fdbc8',
+                        'tertiary':                 '#ffb873',
+                        'tertiary-container':       '#e89337',
+                        'on-tertiary':              '#4b2800',
+                        'on-tertiary-container':    '#5b3200',
+                        'on-tertiary-fixed':        '#2d1600',
+                        'on-tertiary-fixed-variant':'#6a3b00',
+                        'tertiary-fixed':           '#ffdcbf',
+                        'tertiary-fixed-dim':       '#ffb873',
+                        'error':                    '#ffb4ab',
+                        'error-container':          '#93000a',
+                        'on-error':                 '#690005',
+                        'on-error-container':       '#ffdad6'
+                    },
+                    borderRadius: {
+                        DEFAULT: '0.125rem',
+                        lg: '0.25rem',
+                        xl: '0.5rem',
+                        full: '0.75rem'
+                    },
+                    spacing: {
+                        'margin':   '2rem',
+                        'space-lg': '1.5rem',
+                        'space-md': '1rem',
+                        'gutter':   '1.5rem',
+                        'space-sm': '0.5rem',
+                        'space-xs': '0.25rem',
+                        'space-xl': '3rem'
+                    },
+                    fontFamily: {
+                        'label-sm':  ['Inter', 'sans-serif'],
+                        'body-md':   ['Inter', 'sans-serif'],
+                        'label-md':  ['Inter', 'sans-serif'],
+                        'headline-xl':['Inter', 'sans-serif'],
+                        'headline-sm':['Inter', 'sans-serif'],
+                        'body-sm':   ['Inter', 'sans-serif'],
+                        'body-lg':   ['Inter', 'sans-serif'],
+                        'headline-lg':['Inter', 'sans-serif'],
+                        'headline-md':['Inter', 'sans-serif']
+                    },
+                    fontSize: {
+                        'label-sm':   ['12px', { lineHeight: '16px', letterSpacing: '0.01em', fontWeight: '500' }],
+                        'body-md':    ['14px', { lineHeight: '20px', fontWeight: '400' }],
+                        'label-md':   ['14px', { lineHeight: '20px', letterSpacing: '0.01em', fontWeight: '500' }],
+                        'headline-xl':['48px', { lineHeight: '56px', letterSpacing: '-0.02em', fontWeight: '700' }],
+                        'headline-sm':['20px', { lineHeight: '28px', fontWeight: '500' }],
+                        'body-sm':    ['12px', { lineHeight: '16px', fontWeight: '400' }],
+                        'body-lg':    ['16px', { lineHeight: '24px', fontWeight: '400' }],
+                        'headline-lg':['36px', { lineHeight: '44px', letterSpacing: '-0.01em', fontWeight: '600' }],
+                        'headline-md':['24px', { lineHeight: '32px', fontWeight: '600' }]
                     }
                 }
             }
         }
     </script>
     <style>
+        @layer base {
+            html, body { margin: 0; padding: 0; }
+            body { overscroll-behavior: none; }
+        }
+        ::-webkit-scrollbar { display: none; }
         #hero-video {
             position: absolute;
-            top: 50%;
-            left: 50%;
-            min-width: 100%;
-            min-height: 100%;
-            width: auto;
-            height: auto;
+            top: 50%; left: 50%;
+            min-width: 100%; min-height: 100%;
+            width: auto; height: auto;
             z-index: 0;
             transform: translate(-50%, -50%);
             object-fit: cover;
         }
-        .bg-form-overlay {
-            background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg');
-            background-size: cover;
-            background-position: center;
-        }
-        .bg-simbolo-gradient {
-            background: linear-gradient(145deg, #1C1C1E 0%, #0f172a 100%);
-        }
     </style>
 </head>
-<body class="bg-innovaia-dark text-gray-300 antialiased relative font-sans">
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T377ZKBN"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <nav class="absolute top-0 left-0 w-full px-6 py-4 flex justify-between items-center z-50 bg-transparent">
-        <div class="text-2xl font-bold tracking-tighter">
-            <span class="text-white">INNOVA</span><span class="text-innovaia-cyan">IA</span>
-        </div>
-        <div class="hidden md:flex gap-8 items-center">
-            <a href="#servicios" class="text-sm font-medium text-gray-400 hover:text-white transition-colors">Servicios</a>
-            <a href="#contacto" class="text-sm font-semibold text-innovaia-cyan hover:text-innovaia-teal transition-colors border border-innovaia-cyan/30 px-4 py-2 rounded-full">Contáctanos</a>
-        </div>
-    </nav>
 
-    <section class="relative h-screen flex items-center justify-center text-center overflow-hidden z-10">
-        <video autoplay loop muted playsinline id="hero-video" class="opacity-50">
-            <source src="hero-video.mp4" type="video/mp4">
-        </video>
-        <div class="absolute inset-0 bg-black/60 z-10"></div>
+<body class="bg-absolute-black font-body-md text-body-md text-on-surface antialiased">
 
-        <div class="relative z-20 container mx-auto px-6 mt-16">
-            <p class="text-innovaia-teal font-semibold tracking-widest text-sm uppercase mb-4">INNOVAIA CONSULTING GROUP</p>
-            <h1 class="text-5xl md:text-7xl font-black text-white mb-6 leading-none tracking-tight">
-                Impulsa tu <br>
-                <span class="text-transparent bg-clip-text bg-gradient-to-b from-white via-innovaia-cyan to-innovaia-cyan">
-                    Transformación.
-                </span>
-            </h1>
-            <p class="text-xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
-                Evolución digital mediante arquitectura estratégica y ejecución ágil. Más de 18 años redefiniendo la operatividad corporativa B2B.
-            </p>
-            <div class="flex justify-center gap-4 flex-wrap">
-                <a href="#servicios" class="px-8 py-4 border border-white text-white font-bold rounded-full hover:bg-white hover:text-black transition-all transform hover:scale-105 text-center">
-                    Nuestros Servicios
-                </a>
-                <a href="#contacto" class="px-8 py-4 bg-white text-black font-bold rounded-full hover:bg-gray-200 transition-all transform hover:scale-105 text-center">
-                    Solicitar Evaluación Técnica
-                </a>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T377ZKBN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- ═══════════════ HEADER ═══════════════ -->
+<header class="fixed top-0 left-0 w-full z-50 bg-absolute-black/80 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+    <div class="h-16 w-full px-gutter flex items-center justify-between">
+        <div class="flex items-center gap-space-sm">
+            <img alt="INNOVAIA TECH Logo" class="h-8 w-auto object-contain" src="logo_innovaia.png">
+            <span class="font-headline-sm text-headline-sm tracking-tight text-pure-white">INNOVAIA<span class="text-cyan-accent">.</span></span>
+        </div>
+        <nav class="hidden md:flex items-center gap-space-lg">
+            <a class="transition-colors py-space-xs px-space-sm font-label-md text-label-md text-on-surface-variant hover:text-on-surface" href="#servicios-section">Servicios</a>
+            <a class="transition-colors py-space-xs px-space-sm font-label-md text-label-md text-on-surface-variant hover:text-on-surface" href="#portafolio">Casos de Éxito &amp; Productos</a>
+            <a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs px-space-sm" href="#contacto-section">Contacto</a>
+        </nav>
+        <div class="flex items-center gap-space-md">
+            <a class="hidden sm:inline-flex items-center justify-center font-label-md text-label-md text-pure-white bg-surface-container/60 hover:bg-surface-container hover:text-cyan-accent px-space-md py-space-xs rounded transition-all" href="#contacto-section">
+                <span class="font-label-md text-label-md">Agendar Consulta</span>
+            </a>
+            <div class="w-8 h-8 rounded-full bg-cyan-accent flex items-center justify-center">
+                <span class="material-symbols-outlined text-absolute-black text-[18px]">person</span>
             </div>
         </div>
-    </section>
+    </div>
+</header>
 
-    <section id="producto-vivo" class="bg-innovaia-dark py-24 border-t border-gray-900">
-        <div class="container mx-auto px-6 max-w-5xl text-center">
-            <span class="inline-block bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-6">Nuevo Producto</span>
-            <h2 class="text-4xl md:text-6xl font-extrabold text-white mb-6 tracking-tight">Plataforma <span class="text-innovaia-cyan">Vivo</span></h2>
-            <p class="text-xl text-gray-400 mb-8 max-w-3xl mx-auto leading-relaxed">
-                Te presentamos 'Vivo', nuestra solución integral de inteligencia artificial diseñada para impulsar la innovación y automatización en tu organización. 
-                Vivo centraliza la información y potencia la toma de decisiones estratégicas.
-            </p>
-            <p class="text-lg text-gray-400 mb-16 max-w-3xl mx-auto leading-relaxed">
-                Con Vivo, podrás automatizar flujos de trabajo complejos, obtener análisis predictivos avanzados y mejorar la eficiencia operativa de tu negocio de manera significativa.
-            </p>
+<main class="w-full pt-16 bg-absolute-black min-h-screen">
+<div class="flex flex-col w-full text-on-surface antialiased">
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left mb-16">
-                <div class="bg-simbolo-gradient p-8 rounded-2xl border border-gray-800 hover:border-innovaia-cyan transition-all">
-                    <div class="text-3xl mb-4">🤖</div>
-                    <h3 class="text-xl font-bold text-white mb-3">Automatización Inteligente</h3>
-                    <p class="text-gray-400 text-sm">Automatiza tareas repetitivas y procesos internos con agentes de IA personalizados para liberar el potencial de tu equipo.</p>
-                </div>
-                <div class="bg-simbolo-gradient p-8 rounded-2xl border border-gray-800 hover:border-innovaia-teal transition-all">
-                    <div class="text-3xl mb-4">📈</div>
-                    <h3 class="text-xl font-bold text-white mb-3">Análisis Predictivo</h3>
-                    <p class="text-gray-400 text-sm">Obtén insights y predicciones sobre el comportamiento de tu mercado, ventas y operaciones para tomar decisiones más acertadas.</p>
-                </div>
-                <div class="bg-simbolo-gradient p-8 rounded-2xl border border-gray-800 hover:border-innovaia-cyan transition-all">
-                    <div class="text-3xl mb-4">🔌</div>
-                    <h3 class="text-xl font-bold text-white mb-3">Integración Total</h3>
-                    <p class="text-gray-400 text-sm">Conecta 'Vivo' con tus sistemas ERP, CRM y plataformas existentes para centralizar toda la información de tu empresa.</p>
-                </div>
-            </div>
+<!-- ═══════════════ 1. HERO SECTION ═══════════════ -->
+<section class="relative w-full -mt-16 overflow-hidden bg-absolute-black">
+    <!-- Video Background -->
+    <video autoplay loop muted playsinline id="hero-video" class="opacity-40">
+        <source src="hero-video.mp4" type="video/mp4">
+    </video>
+    <div class="absolute inset-0 bg-gradient-to-b from-absolute-black via-absolute-black/70 to-absolute-black pointer-events-none"></div>
+    <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-cyan-accent/15 blur-[140px] pointer-events-none rounded-full"></div>
 
-            <a href="#contacto" class="px-10 py-4 bg-innovaia-cyan text-black font-bold rounded-full hover:bg-innovaia-teal transition-all transform hover:scale-105 text-center inline-block shadow-[0_0_20px_rgba(6,182,212,0.4)]">
-                Agendar una Demo de Vivo para tu Empresa
+    <div class="relative w-full max-w-7xl mx-auto px-gutter pt-36 pb-20 sm:pt-44 sm:pb-28 flex flex-col items-center text-center">
+        <!-- Pill Badge -->
+        <div class="inline-flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-surface-container-high/80 backdrop-blur-md shadow-[0_0_24px_rgba(6,182,212,0.25)] mb-space-lg">
+            <span class="text-cyan-accent text-[11px] font-label-sm tracking-wide uppercase font-semibold">✦ Consultoría IT &amp; Ingeniería de Software Corporativo</span>
+        </div>
+        <!-- Main Headline -->
+        <h1 class="font-headline-xl text-headline-xl sm:text-[56px] sm:leading-[64px] font-bold text-pure-white max-w-4xl tracking-tight">
+            Impulsa tu <span class="bg-gradient-to-r from-pure-white via-cyan-accent to-teal-accent bg-clip-text text-transparent">Transformación Digital</span>
+        </h1>
+        <!-- Subheadline -->
+        <p class="mt-space-md font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+            Más de 18 años integrando arquitecturas ágiles de software de alto rendimiento, optimización ERP de escala enterprise y soluciones de Inteligencia Artificial para corporaciones globales.
+        </p>
+        <!-- CTA Button Group -->
+        <div class="mt-space-xl flex flex-col sm:flex-row items-center justify-center gap-space-md w-full sm:w-auto">
+            <a class="w-full sm:w-auto inline-flex items-center justify-center font-label-md text-label-md font-semibold text-absolute-black bg-pure-white hover:bg-cyan-accent px-space-xl py-3.5 rounded shadow-[0_0_30px_rgba(6,182,212,0.4)] transition-all duration-300 transform hover:-translate-y-0.5" href="#contacto-section">
+                <span>Solicitar Evaluación Técnica</span>
+                <span class="material-symbols-outlined ml-2 text-[18px]">arrow_forward</span>
+            </a>
+            <a class="w-full sm:w-auto inline-flex items-center justify-center font-label-md text-label-md font-medium text-pure-white bg-surface-container/70 hover:bg-surface-container-high backdrop-blur-sm px-space-lg py-3.5 rounded transition-all duration-200" href="#portafolio">
+                <span class="material-symbols-outlined mr-2 text-[18px] text-cyan-accent">terminal</span>
+                <span>Explorar Casos de Éxito</span>
             </a>
         </div>
-    </section>
+        <!-- Trust Proof Metric Bar -->
+        <div class="mt-space-xl w-full max-w-5xl rounded-xl bg-surface-container-low/70 backdrop-blur-xl p-space-lg grid grid-cols-2 md:grid-cols-4 gap-space-md shadow-2xl">
+            <div class="flex flex-col items-center md:items-start text-center md:text-left px-space-sm">
+                <span class="font-headline-lg text-headline-lg font-bold text-pure-white tracking-tight">18+</span>
+                <span class="font-label-sm text-label-sm text-cyan-accent font-medium mt-0.5">Años de Trayectoria</span>
+                <span class="font-body-sm text-body-sm text-outline mt-1">Liderazgo senior IT</span>
+            </div>
+            <div class="flex flex-col items-center md:items-start text-center md:text-left px-space-sm">
+                <span class="font-headline-lg text-headline-lg font-bold text-pure-white tracking-tight">120+</span>
+                <span class="font-label-sm text-label-sm text-teal-accent font-medium mt-0.5">Proyectos Enterprise</span>
+                <span class="font-body-sm text-body-sm text-outline mt-1">Desplegados en producción</span>
+            </div>
+            <div class="flex flex-col items-center md:items-start text-center md:text-left px-space-sm">
+                <span class="font-headline-lg text-headline-lg font-bold text-pure-white tracking-tight">99.9%</span>
+                <span class="font-label-sm text-label-sm text-cyan-accent font-medium mt-0.5">Uptime Arquitectónico</span>
+                <span class="font-body-sm text-body-sm text-outline mt-1">Resiliencia cloud nativa</span>
+            </div>
+            <div class="flex flex-col items-center md:items-start text-center md:text-left px-space-sm">
+                <span class="font-headline-lg text-headline-lg font-bold text-pure-white tracking-tight">Top Tier</span>
+                <span class="font-label-sm text-label-sm text-teal-accent font-medium mt-0.5">SLA Corporativo</span>
+                <span class="font-body-sm text-body-sm text-outline mt-1">Soporte y monitoreo 24/7</span>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <section id="servicios" class="bg-innovaia-dark py-32 border-t border-gray-900">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl md:text-5xl font-extrabold text-white text-center mb-24 tracking-tight">Servicios Premium</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
-                <div class="bg-innovaia-card p-10 rounded-2xl border border-gray-800 hover:border-innovaia-cyan transition-all group">
-                    <div class="text-innovaia-cyan mb-4">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+<!-- ═══════════════ 2. PREMIUM SERVICES GRID ═══════════════ -->
+<section class="w-full bg-absolute-black py-space-xl relative" id="servicios-section">
+    <div class="max-w-7xl mx-auto px-gutter">
+        <!-- Section Header -->
+        <div class="flex flex-col items-start max-w-2xl mb-space-xl">
+            <div class="flex items-center gap-2 mb-space-xs">
+                <span class="w-2 h-2 rounded-full bg-cyan-accent animate-pulse"></span>
+                <span class="font-label-sm text-label-sm uppercase tracking-widest text-cyan-accent font-semibold">Capacidades Estratégicas</span>
+            </div>
+            <h2 class="font-headline-xl text-headline-xl font-bold text-pure-white">Servicios de Alto Impacto</h2>
+            <p class="font-body-lg text-body-lg text-on-surface-variant mt-space-xs">
+                Ingeniería y arquitectura de software de clase mundial adaptada a desafíos corporativos de misión crítica.
+            </p>
+        </div>
+        <!-- 2x2 Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+            <!-- Card 1: Web & App Development -->
+            <div class="group relative rounded-xl bg-surface-container-low p-space-xl flex flex-col justify-between hover:bg-surface-container transition-all duration-300 shadow-lg hover:shadow-[0_0_35px_rgba(6,182,212,0.18)]">
+                <div class="absolute -inset-px rounded-xl bg-gradient-to-br from-cyan-accent/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+                <div>
+                    <div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-cyan-accent mb-space-md shadow-inner">
+                        <span class="material-symbols-outlined text-[26px]">devices</span>
                     </div>
-                    <h3 class="text-2xl font-bold text-white mb-4">Desarrollo Web y Apps</h3>
-                    <p class="text-gray-400">Ecosistemas digitales de alto rendimiento. Desde MVPs rápidos hasta arquitecturas escalables en React y Next.js.</p>
+                    <h3 class="font-headline-md text-headline-md font-semibold text-pure-white group-hover:text-cyan-accent transition-colors">Web &amp; App Development</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant mt-space-sm leading-relaxed">
+                        Desarrollo de aplicaciones web y móviles de escala masiva con arquitecturas modulares, seguridad bancaria y rendimiento ultrarrápido bajo patrones decoupled.
+                    </p>
+                    <div class="flex flex-wrap gap-1.5 mt-space-md">
+                        <span class="px-2.5 py-1 rounded bg-surface-container text-cyan-accent font-label-sm text-label-sm">React</span>
+                        <span class="px-2.5 py-1 rounded bg-surface-container text-cyan-accent font-label-sm text-label-sm">Next.js</span>
+                        <span class="px-2.5 py-1 rounded bg-surface-container text-cyan-accent font-label-sm text-label-sm">TypeScript</span>
+                        <span class="px-2.5 py-1 rounded bg-surface-container text-cyan-accent font-label-sm text-label-sm">Cloud Native</span>
+                        <span class="px-2.5 py-1 rounded bg-surface-container text-cyan-accent font-label-sm text-label-sm">Microfrontends</span>
+                    </div>
                 </div>
-
-                <div class="bg-innovaia-card p-10 rounded-2xl border border-gray-800 hover:border-innovaia-teal transition-all group">
-                    <div class="text-innovaia-teal mb-4">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 002-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-white mb-4">Consultoría ERP</h3>
-                    <p class="text-gray-400">Implementación e integración de Odoo, SAP y MS Dynamics AX para optimizar tu columna vertebral operativa.</p>
+                <div class="mt-space-lg pt-space-md">
+                    <a class="inline-flex items-center font-label-md text-label-md text-pure-white group-hover:text-cyan-accent font-medium transition-colors" href="#contacto-section">
+                        <span>Saber más</span>
+                        <span class="material-symbols-outlined text-[16px] ml-1 transform group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </a>
                 </div>
-
-                <div class="bg-innovaia-card p-10 rounded-2xl border border-gray-800 hover:border-innovaia-cyan transition-all group">
-                    <div class="text-innovaia-cyan mb-4">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+            </div>
+            <!-- Card 2: ERP Consulting & Integrations -->
+            <div class="group relative rounded-xl bg-surface-container-low p-space-xl flex flex-col justify-between hover:bg-surface-container transition-all duration-300 shadow-lg hover:shadow-[0_0_35px_rgba(6,182,212,0.18)]">
+                <div class="absolute -inset-px rounded-xl bg-gradient-to-br from-teal-accent/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+                <div>
+                    <div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-teal-accent mb-space-md shadow-inner">
+                        <span class="material-symbols-outlined text-[26px]">hub</span>
                     </div>
-                    <h3 class="text-2xl font-bold text-white mb-4">Inteligencia Artificial</h3>
-                    <p class="text-gray-400">Automatización de procesos y análisis predictivo. Integramos modelos de IA para darte una ventaja competitiva real.</p>
+                    <h3 class="font-headline-md text-headline-md font-semibold text-pure-white group-hover:text-teal-accent transition-colors">ERP Consulting &amp; Integrations</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant mt-space-sm leading-relaxed">
+                        Implementación, migración y parametrización de sistemas empresariales integrados para automatizar operaciones financieras y logísticas complejas sin fricción.
+                    </p>
+                    <div class="flex flex-wrap gap-1.5 mt-space-md">
+                        <span class="px-2.5 py-1 rounded bg-surface-container text-teal-accent font-label-sm text-label-sm">Odoo</span>
+                        <span class="px-2.5 py-1 rounded bg-surface-container text-teal-accent font-label-sm text-label-sm">SAP S/4HANA</span>
+                        <span class="px-2.5 py-1 rounded bg-surface-container text-teal-accent font-label-sm text-label-sm">MS Dynamics AX</span>
+                        <span class="px-2.5 py-1 rounded bg-surface-container text-teal-accent font-label-sm text-label-sm">API Middleware</span>
+                    </div>
                 </div>
-
-                <div class="bg-innovaia-card p-10 rounded-2xl border border-gray-800 hover:border-innovaia-teal transition-all group">
-                    <div class="text-innovaia-teal mb-4">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
+                <div class="mt-space-lg pt-space-md">
+                    <a class="inline-flex items-center font-label-md text-label-md text-pure-white group-hover:text-teal-accent font-medium transition-colors" href="#contacto-section">
+                        <span>Saber más</span>
+                        <span class="material-symbols-outlined text-[16px] ml-1 transform group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Card 3: AI & Automation -->
+            <div class="group relative rounded-xl bg-surface-container-low p-space-xl flex flex-col justify-between hover:bg-surface-container transition-all duration-300 shadow-lg hover:shadow-[0_0_35px_rgba(6,182,212,0.18)]">
+                <div class="absolute -inset-px rounded-xl bg-gradient-to-br from-cyan-accent/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+                <div>
+                    <div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-cyan-accent mb-space-md shadow-inner">
+                        <span class="material-symbols-outlined text-[26px]">psychology</span>
                     </div>
-                    <h3 class="text-2xl font-bold text-white mb-4">Agile & Design Thinking</h3>
-                    <p class="text-gray-400">Gestión de proyectos centrada en el usuario. Combinamos la empatía del Design Thinking con marcos ágiles para asegurar productos exitosos.</p>
+                    <h3 class="font-headline-md text-headline-md font-semibold text-pure-white group-hover:text-cyan-accent transition-colors">Artificial Intelligence &amp; Automation</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant mt-space-sm leading-relaxed">
+                        Agentes inteligentes autónomos y modelos predictivos diseñados para acelerar la toma de decisiones, eliminar tareas redundantes y optimizar costes operacionales.
+                    </p>
+                    <div class="flex flex-wrap gap-1.5 mt-space-md">
+                        <span class="px-2.5 py-1 rounded bg-surface-container text-cyan-accent font-label-sm text-label-sm">LLMs Empresariales</span>
+                        <span class="px-2.5 py-1 rounded bg-surface-container text-cyan-accent font-label-sm text-label-sm">Computer Vision</span>
+                        <span class="px-2.5 py-1 rounded bg-surface-container text-cyan-accent font-label-sm text-label-sm">RPA</span>
+                        <span class="px-2.5 py-1 rounded bg-surface-container text-cyan-accent font-label-sm text-label-sm">ML Pipelines</span>
+                    </div>
+                </div>
+                <div class="mt-space-lg pt-space-md">
+                    <a class="inline-flex items-center font-label-md text-label-md text-pure-white group-hover:text-cyan-accent font-medium transition-colors" href="#contacto-section">
+                        <span>Saber más</span>
+                        <span class="material-symbols-outlined text-[16px] ml-1 transform group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Card 4: Agile & Design Thinking -->
+            <div class="group relative rounded-xl bg-surface-container-low p-space-xl flex flex-col justify-between hover:bg-surface-container transition-all duration-300 shadow-lg hover:shadow-[0_0_35px_rgba(6,182,212,0.18)]">
+                <div class="absolute -inset-px rounded-xl bg-gradient-to-br from-teal-accent/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+                <div>
+                    <div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-teal-accent mb-space-md shadow-inner">
+                        <span class="material-symbols-outlined text-[26px]">rebase_edit</span>
+                    </div>
+                    <h3 class="font-headline-md text-headline-md font-semibold text-pure-white group-hover:text-teal-accent transition-colors">Agile Project Management &amp; Design Thinking</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant mt-space-sm leading-relaxed">
+                        Gobernanza ágil de proyectos críticos, discovery centrado en usuarios de negocio y optimización de flujos de entrega continua con estándares de clase mundial.
+                    </p>
+                    <div class="flex flex-wrap gap-1.5 mt-space-md">
+                        <span class="px-2.5 py-1 rounded bg-surface-container text-teal-accent font-label-sm text-label-sm">Scrum</span>
+                        <span class="px-2.5 py-1 rounded bg-surface-container text-teal-accent font-label-sm text-label-sm">DevOps CI/CD</span>
+                        <span class="px-2.5 py-1 rounded bg-surface-container text-teal-accent font-label-sm text-label-sm">Human-Centered UX</span>
+                        <span class="px-2.5 py-1 rounded bg-surface-container text-teal-accent font-label-sm text-label-sm">Sprint Zero</span>
+                    </div>
+                </div>
+                <div class="mt-space-lg pt-space-md">
+                    <a class="inline-flex items-center font-label-md text-label-md text-pure-white group-hover:text-teal-accent font-medium transition-colors" href="#contacto-section">
+                        <span>Saber más</span>
+                        <span class="material-symbols-outlined text-[16px] ml-1 transform group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </a>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <footer id="contacto" class="bg-form-overlay py-32 border-t border-gray-900">
-        <div class="container mx-auto px-6 max-w-4xl text-center">
-            <h2 class="text-4xl font-extrabold text-white mb-6 tracking-tight">¿Hablamos de tu proyecto?</h2>
-            
-            <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4 text-left max-w-2xl mx-auto bg-black/40 p-8 rounded-3xl backdrop-blur-md border border-white/10">
+<!-- ═══════════════ 3. PORTFOLIO / PRODUCTS ═══════════════ -->
+<section class="w-full bg-surface-container-lowest py-space-xl relative overflow-hidden" id="portafolio">
+    <div class="absolute -right-36 top-1/4 w-[500px] h-[500px] bg-teal-accent/10 blur-[140px] pointer-events-none rounded-full"></div>
+    <div class="absolute -left-36 top-2/3 w-[500px] h-[500px] bg-cyan-accent/10 blur-[140px] pointer-events-none rounded-full"></div>
+    <div class="max-w-7xl mx-auto px-gutter relative">
+        <div class="flex flex-col items-center text-center max-w-3xl mx-auto mb-space-xl">
+            <div class="inline-flex items-center gap-1.5 px-space-md py-1 rounded-full bg-surface-container text-teal-accent text-[11px] font-label-sm tracking-wider uppercase font-semibold mb-space-sm">
+                <span class="w-2 h-2 rounded-full bg-teal-accent animate-pulse"></span>
+                <span>PORTAFOLIO DE PRODUCTOS &amp; SOLUCIONES REALES</span>
+            </div>
+            <h2 class="font-headline-xl text-headline-xl sm:text-[44px] font-bold text-pure-white tracking-tight">Sistemas Empresariales de Alto Impacto</h2>
+            <p class="font-body-lg text-body-lg text-on-surface-variant mt-space-xs leading-relaxed">Plataformas nativas en producción, aplicaciones PWA offline-first y arquitecturas FinTech con conexión descentralizada diseñadas por Innovaia Tech.</p>
+        </div>
+
+        <div class="flex flex-col gap-space-xl">
+            <!-- ── Master Padel CCS ── -->
+            <div class="rounded-2xl bg-surface-container-low/90 border border-outline-variant/30 p-space-lg sm:p-space-xl shadow-2xl relative overflow-hidden group">
+                <div class="absolute -inset-px rounded-2xl bg-gradient-to-r from-cyan-accent/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+                    <div class="lg:col-span-7 flex flex-col gap-space-md">
+                        <div class="flex flex-wrap items-center gap-space-xs">
+                            <span class="px-space-sm py-0.5 rounded-full bg-cyan-accent/15 text-cyan-accent text-[11px] font-label-sm uppercase tracking-wider font-semibold">Deporte &amp; Gestión SaaS</span>
+                            <span class="px-space-sm py-0.5 rounded-full bg-surface-container text-on-surface-variant text-[11px] font-label-sm">"el pádel es la excusa"</span>
+                        </div>
+                        <h3 class="font-headline-lg text-headline-lg font-bold text-pure-white tracking-tight">Master Padel CCS <span class="text-cyan-accent text-[22px] block sm:inline font-medium font-body-lg">— Ecosistema Deportivo &amp; Club Management PWA</span></h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Solución integral de fidelización, reservas en milisegundos y analítica de juego desarrollada a medida para clubes deportivos de alta concurrencia.</p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm mt-space-xs">
+                            <div class="flex items-start gap-space-xs p-space-sm rounded bg-surface-container/70">
+                                <span class="material-symbols-outlined text-cyan-accent text-[20px] mt-0.5">install_mobile</span>
+                                <div>
+                                    <div class="font-label-md text-label-md text-pure-white font-semibold">PWA Offline-First</div>
+                                    <div class="font-body-sm text-body-sm text-on-surface-variant">Carga ultrarrápida sin pasar por tiendas.</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-space-xs p-space-sm rounded bg-surface-container/70">
+                                <span class="material-symbols-outlined text-teal-accent text-[20px] mt-0.5">calendar_month</span>
+                                <div>
+                                    <div class="font-label-md text-label-md text-pure-white font-semibold">Reservas en Tiempo Real</div>
+                                    <div class="font-body-sm text-body-sm text-on-surface-variant">Micro-latencia y zero double-booking.</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-space-xs p-space-sm rounded bg-surface-container/70">
+                                <span class="material-symbols-outlined text-cyan-accent text-[20px] mt-0.5">sports_tennis</span>
+                                <div>
+                                    <div class="font-label-md text-label-md text-pure-white font-semibold">Métricas &amp; Fidelización</div>
+                                    <div class="font-body-sm text-body-sm text-on-surface-variant">Club de puntos, ranking VIP y torneos.</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-space-xs p-space-sm rounded bg-surface-container/70">
+                                <span class="material-symbols-outlined text-teal-accent text-[20px] mt-0.5">fingerprint</span>
+                                <div>
+                                    <div class="font-label-md text-label-md text-pure-white font-semibold">Acceso Seguro por Cédula</div>
+                                    <div class="font-body-sm text-body-sm text-on-surface-variant">Autenticación ágil para jugadores.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs">
+                            <div class="flex items-center gap-space-xs text-body-sm text-outline">
+                                <span class="material-symbols-outlined text-teal-accent text-[16px]">verified</span>
+                                <span>Desarrollado integralmente por Innovaia Tech</span>
+                            </div>
+                            <a class="inline-flex items-center font-label-sm text-label-sm font-semibold text-pure-white bg-surface-container-high hover:bg-cyan-accent hover:text-absolute-black px-space-md py-2 rounded transition-all" href="#contacto-section">
+                                <span>Solicitar Demo PWA</span>
+                                <span class="material-symbols-outlined text-[16px] ml-1.5">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-5 flex justify-center">
+                        <div class="relative max-w-[300px] w-full rounded-2xl overflow-hidden shadow-2xl border border-outline-variant/40 bg-surface-dim group-hover:scale-105 transition-transform duration-500">
+                            <img alt="Master Padel CCS Mobile Login" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDkm-RQdiUR-PyEYeuWGuOJPalbH7RIQGCENP4kTKvVhIQS-jVkMX6oGx3Ya33ToEHwIAtbR01EqbYjHRTdwdS65521o08GQvHyqmDBLP-xQTVhIRAEIeMX5ZvopXBaSqrEdXm7bWhdKK0zOqyZdj0jmtpY-zJkkDrvWGUD_D4h9LVLc5l6mAvypyd96aCqyXJHO3YMG-B1TM_5TmJQ5QShZo09DWOBMip2TfFS-Fdcnf706R9QRpQ-w7pP-VETxsQzg">
+                            <div class="absolute bottom-3 left-3 right-3 px-space-sm py-1.5 rounded-lg bg-surface-container-high/90 backdrop-blur-md flex items-center justify-between pointer-events-none">
+                                <span class="flex items-center gap-1.5 font-label-sm text-[11px] text-pure-white">
+                                    <span class="w-2 h-2 rounded-full bg-teal-accent animate-pulse"></span>PWA Activa
+                                </span>
+                                <span class="font-label-sm text-[11px] text-cyan-accent font-semibold">+4,850 Usuarios</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ── VIVO Payroll ── -->
+            <div class="rounded-2xl bg-surface-container-low/90 border border-outline-variant/30 p-space-lg sm:p-space-xl shadow-2xl relative overflow-hidden group">
+                <div class="absolute -inset-px rounded-2xl bg-gradient-to-r from-teal-accent/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+                    <div class="lg:col-span-7 flex flex-col gap-space-md">
+                        <div class="flex flex-wrap items-center gap-space-xs">
+                            <span class="px-space-sm py-0.5 rounded-full bg-teal-accent/15 text-teal-accent text-[11px] font-label-sm uppercase tracking-wider font-semibold">FinTech &amp; HR Tech Enterprise</span>
+                            <span class="px-space-sm py-0.5 rounded-full bg-surface-container text-on-surface-variant text-[11px] font-label-sm">Bimonetario / Multi-empresa</span>
+                        </div>
+                        <h3 class="font-headline-lg text-headline-lg font-bold text-pure-white tracking-tight">VIVO Payroll <span class="text-teal-accent text-[22px] block sm:inline font-medium font-body-lg">— El motor que da vida a tu nómina</span></h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Automatización inteligente de cálculo de sueldos, beneficios y obligaciones legales en Venezuela con cumplimiento total LOTTT, IVSS, FAOV y Ley de Pensiones.</p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm mt-space-xs">
+                            <div class="flex items-start gap-space-xs p-space-sm rounded bg-surface-container/70">
+                                <span class="material-symbols-outlined text-teal-accent text-[20px] mt-0.5">currency_exchange</span>
+                                <div>
+                                    <div class="font-label-md text-label-md text-pure-white font-semibold">Nómina Bimonetaria</div>
+                                    <div class="font-body-sm text-body-sm text-on-surface-variant">Sincronización de tasas y montos en Bs. y USD.</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-space-xs p-space-sm rounded bg-surface-container/70">
+                                <span class="material-symbols-outlined text-cyan-accent text-[20px] mt-0.5">account_balance</span>
+                                <div>
+                                    <div class="font-label-md text-label-md text-pure-white font-semibold">Exportación Bancaria</div>
+                                    <div class="font-body-sm text-body-sm text-on-surface-variant">Archivos txt y formatos de pago bancarios al instante.</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-space-xs p-space-sm rounded bg-surface-container/70">
+                                <span class="material-symbols-outlined text-teal-accent text-[20px] mt-0.5">monitoring</span>
+                                <div>
+                                    <div class="font-label-md text-label-md text-pure-white font-semibold">Pulso Cardíaco Financiero</div>
+                                    <div class="font-body-sm text-body-sm text-on-surface-variant">Métricas en tiempo real de colaboradores e inversión.</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-space-xs p-space-sm rounded bg-surface-container/70">
+                                <span class="material-symbols-outlined text-cyan-accent text-[20px] mt-0.5">schedule</span>
+                                <div>
+                                    <div class="font-label-md text-label-md text-pure-white font-semibold">Monitor de Asistencia</div>
+                                    <div class="font-body-sm text-body-sm text-on-surface-variant">Histórico de horas, tardanzas y ausencias milimétrico.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs">
+                            <div class="flex items-center gap-space-xs text-body-sm text-outline">
+                                <span class="material-symbols-outlined text-cyan-accent text-[16px]">cloud_done</span>
+                                <span>Cloud Enterprise 100% web • Sin instalación local</span>
+                            </div>
+                            <a class="inline-flex items-center font-label-sm text-label-sm font-semibold text-pure-white bg-surface-container-high hover:bg-teal-accent hover:text-absolute-black px-space-md py-2 rounded transition-all" href="#contacto-section">
+                                <span>Conocer Plataforma VIVO</span>
+                                <span class="material-symbols-outlined text-[16px] ml-1.5">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-5 flex justify-center">
+                        <div class="relative w-full rounded-2xl overflow-hidden shadow-2xl border border-outline-variant/40 bg-surface-dim group-hover:scale-105 transition-transform duration-500">
+                            <img alt="VIVO Payroll SaaS Platform Interface" class="w-full h-auto object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtiXl4SWiWoNT2hjt5vSq7cq0Q5ceFzBiyV6zlwEa1qeaa99rgNlv22szbcjK1pQ6UteIQZzQirkTbWAudl0A4C5Jp3VziubI3sJXIaPcpivtv0C5tdwmbmSNAYsj-cs_OV9l4Yykhl2NXEA8MrVYQLJDTGmah5kKzCnLWATYrB0Hp5w_0Uq6nh8Y3aU-HNPkyLZxHAIzWu4P6F9pEEqsBf6KU9kCwKSIt0V3eGLzAde8rdqd08hLHECUEENG9yfXO7Q">
+                            <div class="absolute bottom-3 left-3 right-3 px-space-sm py-1.5 rounded-lg bg-surface-container-high/90 backdrop-blur-md flex items-center justify-between pointer-events-none">
+                                <span class="font-label-sm text-[11px] text-pure-white flex items-center gap-1.5">
+                                    <span class="w-2 h-2 rounded-full bg-cyan-accent"></span>LOTTT &amp; IVSS Compliant
+                                </span>
+                                <span class="font-label-sm text-[11px] text-teal-accent font-semibold">Liquidación Instantánea</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ── Iuventus Beauty WMS ── -->
+            <div class="rounded-2xl bg-surface-container-low/90 border border-outline-variant/30 p-space-lg sm:p-space-xl shadow-2xl relative overflow-hidden group">
+                <div class="absolute -inset-px rounded-2xl bg-gradient-to-r from-cyan-accent/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+                    <div class="lg:col-span-7 flex flex-col gap-space-md">
+                        <div class="flex flex-wrap items-center gap-space-xs">
+                            <span class="px-space-sm py-0.5 rounded-full bg-cyan-accent/15 text-cyan-accent text-[11px] font-label-sm uppercase tracking-wider font-semibold">Supply Chain &amp; Blockchain / FinTech</span>
+                            <span class="px-space-sm py-0.5 rounded-full bg-surface-container text-on-surface-variant text-[11px] font-label-sm">Stellar Distributed Ledger</span>
+                        </div>
+                        <h3 class="font-headline-lg text-headline-lg font-bold text-pure-white tracking-tight">Iuventus Beauty WMS <span class="text-cyan-accent text-[22px] block sm:inline font-medium font-body-lg">— App de Inventario Conectada a Stellar</span></h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Warehouse Management System v5.0 conectado a la red blockchain Stellar para trazabilidad, liquidaciones y control de stock multimillonario en tiempo real.</p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm mt-space-xs">
+                            <div class="flex items-start gap-space-xs p-space-sm rounded bg-surface-container/70">
+                                <span class="material-symbols-outlined text-cyan-accent text-[20px] mt-0.5">token</span>
+                                <div>
+                                    <div class="font-label-md text-label-md text-pure-white font-semibold">Conexión Stellar Network</div>
+                                    <div class="font-body-sm text-body-sm text-on-surface-variant">Auditoría inmutable y transferencias en ledger distribuido.</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-space-xs p-space-sm rounded bg-surface-container/70">
+                                <span class="material-symbols-outlined text-teal-accent text-[20px] mt-0.5">store</span>
+                                <div>
+                                    <div class="font-label-md text-label-md text-pure-white font-semibold">Multisucursal &amp; Depósitos</div>
+                                    <div class="font-body-sm text-body-sm text-on-surface-variant">Enrutamiento de stock entre sedes físicas en tiempo real.</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-space-xs p-space-sm rounded bg-surface-container/70">
+                                <span class="material-symbols-outlined text-cyan-accent text-[20px] mt-0.5">dark_mode</span>
+                                <div>
+                                    <div class="font-label-md text-label-md text-pure-white font-semibold">Modo Oscuro &amp; Ergonomía</div>
+                                    <div class="font-body-sm text-body-sm text-on-surface-variant">Diseño para terminales industriales y movilidad en bodega.</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-space-xs p-space-sm rounded bg-surface-container/70">
+                                <span class="material-symbols-outlined text-teal-accent text-[20px] mt-0.5">query_stats</span>
+                                <div>
+                                    <div class="font-label-md text-label-md text-pure-white font-semibold">Reportería Ejecutiva</div>
+                                    <div class="font-body-sm text-body-sm text-on-surface-variant">Conciliación de inventarios y balance de depósitos.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs">
+                            <div class="flex items-center gap-space-xs text-body-sm text-outline">
+                                <span class="material-symbols-outlined text-cyan-accent text-[16px]">terminal</span>
+                                <span>dev by Innovaia Tech | v5.0.0 • 2026</span>
+                            </div>
+                            <a class="inline-flex items-center font-label-sm text-label-sm font-semibold text-pure-white bg-surface-container-high hover:bg-cyan-accent hover:text-absolute-black px-space-md py-2 rounded transition-all" href="#contacto-section">
+                                <span>Consultar Solución WMS</span>
+                                <span class="material-symbols-outlined text-[16px] ml-1.5">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-5 flex justify-center">
+                        <div class="relative max-w-[300px] w-full rounded-2xl overflow-hidden shadow-2xl border border-outline-variant/40 bg-surface-dim group-hover:scale-105 transition-transform duration-500">
+                            <img alt="Iuventus Beauty WMS Login Interface" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxijAlAeWcZmy4EqfPokUUX4CTKJc13Sp--w3u5BGf9XUvS_4zfJacEwMhlNwylNBHn42wdSdTYQP6M43VpmeY4qVBS6GDJxt7a7VSFwbZZlf7NWI_8NhWwBKnCeAkZ3-heuBRaOunh_FMrG9rQEYUJOdMDmi7QahSqrVniqfldGxitALyMeVPp7plpPAdowCarCDP48LN83GqApZV6HMz0XYQxBBn3NOEhQE4gG3R-_cifZc7J1Ehqgeikcockg0OOg">
+                            <div class="absolute bottom-3 left-3 right-3 px-space-sm py-1.5 rounded-lg bg-surface-container-high/90 backdrop-blur-md flex items-center justify-between pointer-events-none">
+                                <span class="font-label-sm text-[11px] text-pure-white flex items-center gap-1.5">
+                                    <span class="w-2 h-2 rounded-full bg-cyan-accent"></span>Stellar Ledger
+                                </span>
+                                <span class="font-label-sm text-[11px] text-teal-accent font-semibold">v5.0 Enterprise</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════ 4. LEAD GENERATION FORM ═══════════════ -->
+<section class="w-full bg-absolute-black py-space-xl relative" id="contacto-section">
+    <div class="max-w-4xl mx-auto px-gutter">
+        <div class="text-center mb-space-xl">
+            <span class="font-label-sm text-label-sm uppercase tracking-widest text-cyan-accent font-semibold">Conectemos</span>
+            <h2 class="font-headline-xl text-headline-xl font-bold text-pure-white mt-space-xs">Inicia tu Próxima Etapa de Crecimiento</h2>
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto mt-space-xs">
+                Agenda una sesión estratégica de diagnóstico con nuestros arquitectos de software senior.
+            </p>
+        </div>
+        <!-- Glassmorphic Form -->
+        <div class="rounded-2xl bg-surface-container-low/90 backdrop-blur-xl p-space-lg sm:p-space-xl shadow-2xl relative">
+            <div class="absolute -top-10 left-1/2 -translate-x-1/2 w-48 h-20 bg-cyan-accent/15 blur-2xl rounded-full pointer-events-none"></div>
+            <form action="https://api.web3forms.com/submit" method="POST" class="flex flex-col gap-space-lg relative" id="lead-form">
                 <input type="hidden" name="access_key" value="eb768eb4-4ccf-474a-b93f-90df47f9bf33">
                 <input type="hidden" name="redirect" value="https://innovaia.com.ve">
                 <input type="hidden" name="subject" value="Nuevo Lead de INNOVAIA">
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <input type="text" name="Nombre" required placeholder="Nombre Completo" class="w-full bg-gray-900/80 text-white border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:border-innovaia-cyan">
-                    <input type="email" name="Correo" required placeholder="Correo Corporativo" class="w-full bg-gray-900/80 text-white border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:border-innovaia-cyan">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+                    <div class="flex flex-col gap-1.5">
+                        <label class="font-label-sm text-label-sm text-on-surface-variant" for="nombre">Nombre Completo</label>
+                        <input class="w-full px-space-md py-3 rounded bg-surface-container text-pure-white placeholder-outline focus:outline-none focus:bg-surface-container-high transition-colors font-body-md text-body-md" id="nombre" name="Nombre" placeholder="Ej. Carlos Mendoza" required type="text">
+                    </div>
+                    <div class="flex flex-col gap-1.5">
+                        <label class="font-label-sm text-label-sm text-on-surface-variant" for="correo">Correo Corporativo</label>
+                        <input class="w-full px-space-md py-3 rounded bg-surface-container text-pure-white placeholder-outline focus:outline-none focus:bg-surface-container-high transition-colors font-body-md text-body-md" id="correo" name="Correo" placeholder="carlos@empresa.com" required type="email">
+                    </div>
                 </div>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <input type="text" name="Empresa" required placeholder="Empresa" class="w-full bg-gray-900/80 text-white border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:border-innovaia-cyan">
-                    <input type="tel" name="Telefono" required placeholder="WhatsApp (Ej: +58 4XX...)" class="w-full bg-gray-900/80 text-white border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:border-innovaia-cyan">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+                    <div class="flex flex-col gap-1.5">
+                        <label class="font-label-sm text-label-sm text-on-surface-variant" for="empresa">Empresa</label>
+                        <input class="w-full px-space-md py-3 rounded bg-surface-container text-pure-white placeholder-outline focus:outline-none focus:bg-surface-container-high transition-colors font-body-md text-body-md" id="empresa" name="Empresa" placeholder="Ej. Corporación Global S.A." type="text">
+                    </div>
+                    <div class="flex flex-col gap-1.5">
+                        <label class="font-label-sm text-label-sm text-on-surface-variant" for="telefono">WhatsApp / Teléfono</label>
+                        <input class="w-full px-space-md py-3 rounded bg-surface-container text-pure-white placeholder-outline focus:outline-none focus:bg-surface-container-high transition-colors font-body-md text-body-md" id="telefono" name="Telefono" placeholder="+58 (412) 000-0000" type="tel">
+                    </div>
                 </div>
-
-                <select name="Servicio" required class="w-full bg-gray-900/80 text-gray-400 border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:border-innovaia-cyan appearance-none">
-                    <option value="" disabled selected>¿En qué podemos ayudarte?</option>
-                    <option value="Demo Plataforma Vivo" class="font-bold text-white">🤖 Solicitar Demo de la Plataforma Vivo</option>
-                    <option value="ERP">Consultoría ERP Corporativa</option>
-                    <option value="Web-App">Desarrollo Web/App</option>
-                    <option value="IA">Inteligencia Artificial</option>
-                    <option value="Agile">Gestión de Proyectos / Agile</option>
-                </select>
-
-                <textarea name="Mensaje" required placeholder="Cuéntanos brevemente sobre tu reto u objetivo..." rows="4" class="w-full bg-gray-900/80 text-white border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:border-innovaia-cyan"></textarea>
-                
-                <button type="submit" class="w-full bg-white text-black font-bold py-4 rounded-full transition-all hover:bg-gray-200 shadow-xl">
-                    Enviar Solicitud
-                </button>
+                <div class="flex flex-col gap-1.5">
+                    <label class="font-label-sm text-label-sm text-on-surface-variant" for="servicio">Servicio Requerido</label>
+                    <select class="w-full px-space-md py-3 rounded bg-surface-container text-pure-white focus:outline-none focus:bg-surface-container-high transition-colors font-body-md text-body-md cursor-pointer" id="servicio" name="Servicio">
+                        <option value="web-app">Desarrollo Web &amp; Apps Escalables</option>
+                        <option value="erp">Consultoría &amp; Integración ERP</option>
+                        <option value="vivo-payroll">Soluciones FinTech / Nómina (VIVO)</option>
+                        <option value="iuventus-stellar">Gestión de Inventarios &amp; Blockchain (Stellar)</option>
+                        <option value="ia-automatizacion">IA &amp; Automatización</option>
+                    </select>
+                </div>
+                <div class="flex flex-col gap-1.5">
+                    <label class="font-label-sm text-label-sm text-on-surface-variant" for="proyecto">Cuéntanos sobre tu proyecto o desafío tecnológico</label>
+                    <textarea class="w-full px-space-md py-3 rounded bg-surface-container text-pure-white placeholder-outline focus:outline-none focus:bg-surface-container-high transition-colors font-body-md text-body-md resize-y" id="proyecto" name="Mensaje" placeholder="Describa objetivos clave, alcance proyectado o tiempos estimados..." rows="4"></textarea>
+                </div>
+                <div class="pt-space-xs flex flex-col items-center">
+                    <button class="w-full sm:w-auto min-w-[280px] inline-flex items-center justify-center font-label-md text-label-md font-bold text-absolute-black bg-pure-white hover:bg-cyan-accent px-space-xl py-4 rounded shadow-[0_0_25px_rgba(6,182,212,0.35)] transition-all duration-300" type="submit">
+                        <span>Solicitar Evaluación Técnica</span>
+                        <span class="material-symbols-outlined ml-2 text-[20px]">send</span>
+                    </button>
+                    <span class="font-body-sm text-body-sm text-outline mt-space-md text-center">
+                        Confidencialidad garantizada bajo NDA. Respuesta en menos de 24 horas hábiles.
+                    </span>
+                </div>
             </form>
-
-            <div class="mt-20 flex justify-center gap-12 border-t border-gray-900 pt-10">
-                <a href="https://www.linkedin.com/in/annijosegoitia" target="_blank" class="text-gray-500 hover:text-innovaia-cyan transition-colors font-medium">LinkedIn</a>
-                <a href="https://instagram.com/innovaia.tech" target="_blank" class="text-gray-500 hover:text-innovaia-cyan transition-colors font-medium">Instagram</a>
-            </div>
-            
-            <p class="mt-8 text-xs text-gray-600 uppercase tracking-widest">INNOVAIA &copy; 2026. Miranda, Venezuela.</p>
         </div>
-    </footer>
+    </div>
+</section>
 
-    <a href="https://wa.me/584122315631?text=Hola%20INNOVAIA,%20estoy%20interesado%20en%20conocer%20más%20sobre%20la%20Plataforma%20Vivo%20y%20sus%20servicios." target="_blank" class="fixed bottom-8 right-8 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform z-50">
-        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
-    </a>
+</div>
+</main>
+
+<!-- ═══════════════ FOOTER ═══════════════ -->
+<footer class="w-full bg-surface-container-lowest py-space-xl">
+    <div class="w-full px-gutter flex flex-col md:flex-row items-center justify-between gap-space-md">
+        <div class="flex items-center gap-space-sm">
+            <span class="font-body-sm text-body-sm text-on-surface-variant">© 2025 INNOVAIA TECH. Todos los derechos reservados.</span>
+        </div>
+        <div class="flex items-center gap-space-lg">
+            <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-cyan-accent transition-colors" href="https://www.linkedin.com/in/annijosegoitia" target="_blank">LinkedIn</a>
+            <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-cyan-accent transition-colors" href="https://instagram.com/innovaia.tech" target="_blank">Instagram</a>
+            <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Privacidad</a>
+            <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Términos</a>
+        </div>
+    </div>
+</footer>
+
+<!-- ═══════════════ WHATSAPP FAB ═══════════════ -->
+<a href="https://wa.me/584122315631?text=Hola%20INNOVAIA,%20estoy%20interesado%20en%20conocer%20más%20sobre%20sus%20servicios." target="_blank" class="fixed bottom-8 right-8 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform z-50">
+    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+</a>
 
 </body>
 </html>
