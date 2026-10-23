@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://innovaia.com.ve/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://innovaia.com.ve/nvidia-inception-vivo-payroll.jpg</image:loc>
+      <image:title>VIVO Payroll e Innovaia Tech - Miembro Oficial de NVIDIA Inception</image:title>
+      <image:caption>La nómina inteligente en Venezuela y LATAM ahora corre a velocidad NVIDIA con VIVO Payroll e Innovaia Tech.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://innovaia.com.ve/logo_innovaia.png</image:loc>
+      <image:title>Logo Oficial Innovaia Tech</image:title>
+    </image:image>
+  </url>
+</urlset>
